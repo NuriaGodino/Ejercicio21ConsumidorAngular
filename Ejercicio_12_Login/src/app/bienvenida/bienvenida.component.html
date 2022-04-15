@@ -1,0 +1,14 @@
+<div class="envoltura">
+  <h3>Bienvenido/a {{usuario}}</h3>
+  <div >
+    <ul>
+      <li *ngFor="let juego of videojuegos; index as i" (click) = "detalle(juego)">
+        ID: {{juego.id}} -
+        Titulo: {{juego.titulo}}
+        <img src="{{juego.icon}}">
+      </li>
+    </ul>
+  </div>
+  
+</div>
+

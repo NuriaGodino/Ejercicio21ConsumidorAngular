@@ -1,0 +1,17 @@
+nav li{
+    display: inline-block;
+    width: 7%;
+    padding: 20px 15px;
+    text-align: center;
+    margin-left: -40px;
+    margin-right: 41px;
+}
+
+nav{
+    margin-top: -16px;
+    background-color: rgb(144, 255, 255);
+}
+
+li:hover{
+    background-color: rgb(113, 248, 248);
+}

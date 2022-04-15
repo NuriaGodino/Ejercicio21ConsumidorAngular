@@ -1,0 +1,18 @@
+<div class="loginContenedor">
+  <div class="envoltura">
+    <div><h3>Usuario desconocido, debe logearse</h3></div>
+    <div class="fila">
+      <label for="usuario"> Usuario:</label>
+      <input [(ngModel)] = "usuario" type="text">
+      <label [hidden] = "errorUser">{{usuarioNoExiste}}</label>
+    </div>
+    <div class="fila2">
+      <label for="pass">Contraseña:</label>
+      <input [(ngModel)] = "pass" type="password">
+      <label [hidden] = "errorPass">{{passIncorrecta}}</label>
+    </div>
+    <div class="boton">
+      <button (click)="login()">Enviar</button>
+    </div>
+  
+</div>
